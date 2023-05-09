@@ -86,7 +86,7 @@ void tiempoArregloRight(int numElements, int reps){
     int Arr[numElements];
     auto start = std::chrono::high_resolution_clock::now();
     for (int j = 0; j < numElements; j++) {
-      Arr[numElements-1]=j;
+      Arr[numElements-j-1]=j;
     }
     auto end = std::chrono::high_resolution_clock::now();
     auto duration =
@@ -195,19 +195,11 @@ int main() {
   
 
   //n=10000 y b variados
+  printf("\n\n");
   n=10000, b=1;
   tiempoListArrLeft(n,b,repetitions);
   tiempoListArrRight(n,b,repetitions);
   tiempoListArrFind(n,b,repetitions, n/2);
-
-  tiempoArregloLeft(n,repetitions);
-  tiempoArregloRight(n,repetitions);
-  tiempoArregloFind(n,repetitions,n/2);
-
-  tiempoLkListLeft(n,repetitions);
-  tiempoLkListRight(n,repetitions);
-  tiempoLkListFind(n,repetitions,n/2);
-
   
   printf("\n\n");
   n=10000, b=64;
@@ -215,29 +207,11 @@ int main() {
   tiempoListArrRight(n,b,repetitions);
   tiempoListArrFind(n,b,repetitions, n/2);
 
-  tiempoArregloLeft(n,repetitions);
-  tiempoArregloRight(n,repetitions);
-  tiempoArregloFind(n,repetitions,n/2);
-
-  tiempoLkListLeft(n,repetitions);
-  tiempoLkListRight(n,repetitions);
-  tiempoLkListFind(n,repetitions,n/2);
-
-
-
   printf("\n\n");
   n=10000, b=128;
   tiempoListArrLeft(n,b,repetitions);
   tiempoListArrRight(n,b,repetitions);
   tiempoListArrFind(n,b,repetitions, n/2);
-
-  tiempoArregloLeft(n,repetitions);
-  tiempoArregloRight(n,repetitions);
-  tiempoArregloFind(n,repetitions,n/2);
-
-  tiempoLkListLeft(n,repetitions);
-  tiempoLkListRight(n,repetitions);
-  tiempoLkListFind(n,repetitions,n/2);
 
   printf("\n\n");
   n=10000, b=256;
@@ -245,68 +219,50 @@ int main() {
   tiempoListArrRight(n,b,repetitions);
   tiempoListArrFind(n,b,repetitions, n/2);
 
+  //n=10000, para arreglos y LinkedList
+  printf("\n\n");
   tiempoArregloLeft(n,repetitions);
   tiempoArregloRight(n,repetitions);
   tiempoArregloFind(n,repetitions,n/2);
 
+  printf("\n\n");
   tiempoLkListLeft(n,repetitions);
   tiempoLkListRight(n,repetitions);
   tiempoLkListFind(n,repetitions,n/2);
- 
+
 
   printf("\n\n\n");
   //n=100000 y b variados
-  n=100000, b=1;
+  n=500000, b=1;
   tiempoListArrLeft(n,b,repetitions);
   tiempoListArrRight(n,b,repetitions);
   tiempoListArrFind(n,b,repetitions, n/2);
-
-  tiempoArregloLeft(n,repetitions);
-  tiempoArregloRight(n,repetitions);
-  tiempoArregloFind(n,repetitions,n/2);
-
-  tiempoLkListLeft(n,repetitions);
-  tiempoLkListRight(n,repetitions);
-  tiempoLkListFind(n,repetitions,n/2);
 
   printf("\n\n");
-  n=100000, b=64;
+  n=500000, b=64;
   tiempoListArrLeft(n,b,repetitions);
   tiempoListArrRight(n,b,repetitions);
   tiempoListArrFind(n,b,repetitions, n/2);
-
-  tiempoArregloLeft(n,repetitions);
-  tiempoArregloRight(n,repetitions);
-  tiempoArregloFind(n,repetitions,n/2);
-
-  tiempoLkListLeft(n,repetitions);
-  tiempoLkListRight(n,repetitions);
-  tiempoLkListFind(n,repetitions,n/2);
 
   printf("\n\n");
-  n=100000, b=128;
+  n=500000, b=128;
   tiempoListArrLeft(n,b,repetitions);
   tiempoListArrRight(n,b,repetitions);
   tiempoListArrFind(n,b,repetitions, n/2);
-
-  tiempoArregloLeft(n,repetitions);
-  tiempoArregloRight(n,repetitions);
-  tiempoArregloFind(n,repetitions,n/2);
-
-  tiempoLkListLeft(n,repetitions);
-  tiempoLkListRight(n,repetitions);
-  tiempoLkListFind(n,repetitions,n/2);
 
   printf("\n\n");
-  n=100000, b=256;
+  n=500000, b=256;
   tiempoListArrLeft(n,b,repetitions);
   tiempoListArrRight(n,b,repetitions);
   tiempoListArrFind(n,b,repetitions, n/2);
 
+  //n=100000, para arreglos y linkedlist
+  printf("\n\n");
   tiempoArregloLeft(n,repetitions);
   tiempoArregloRight(n,repetitions);
   tiempoArregloFind(n,repetitions,n/2);
 
+  printf("\n\n");
   tiempoLkListLeft(n,repetitions);
   tiempoLkListRight(n,repetitions);
   tiempoLkListFind(n,repetitions,n/2);

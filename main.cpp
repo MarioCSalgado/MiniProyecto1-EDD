@@ -194,7 +194,7 @@ int main() {
   int n,b,repetitions=20;
   
 
-  //n=10000 y b variados
+  //n=10mil y b variados
   printf("\n\n");
   n=10000, b=1;
   tiempoListArrLeft(n,b,repetitions);
@@ -219,7 +219,7 @@ int main() {
   tiempoListArrRight(n,b,repetitions);
   tiempoListArrFind(n,b,repetitions, n/2);
 
-  //n=10000, para arreglos y LinkedList
+  //n=10mil, para arreglos y LinkedList
   printf("\n\n");
   tiempoArregloLeft(n,repetitions);
   tiempoArregloRight(n,repetitions);
@@ -232,31 +232,31 @@ int main() {
 
 
   printf("\n\n\n");
-  //n=100000 y b variados
-  n=500000, b=1;
+  //n=100mil y b variados
+  n=100000, b=1;
   tiempoListArrLeft(n,b,repetitions);
   tiempoListArrRight(n,b,repetitions);
   tiempoListArrFind(n,b,repetitions, n/2);
 
   printf("\n\n");
-  n=500000, b=64;
+  n=100000, b=64;
   tiempoListArrLeft(n,b,repetitions);
   tiempoListArrRight(n,b,repetitions);
   tiempoListArrFind(n,b,repetitions, n/2);
 
   printf("\n\n");
-  n=500000, b=128;
+  n=100000, b=128;
   tiempoListArrLeft(n,b,repetitions);
   tiempoListArrRight(n,b,repetitions);
   tiempoListArrFind(n,b,repetitions, n/2);
 
   printf("\n\n");
-  n=500000, b=256;
+  n=100000, b=256;
   tiempoListArrLeft(n,b,repetitions);
   tiempoListArrRight(n,b,repetitions);
   tiempoListArrFind(n,b,repetitions, n/2);
 
-  //n=100000, para arreglos y linkedlist
+  //n=100mil, para arreglos y linkedlist
   printf("\n\n");
   tiempoArregloLeft(n,repetitions);
   tiempoArregloRight(n,repetitions);
